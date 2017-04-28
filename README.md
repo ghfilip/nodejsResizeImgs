@@ -9,7 +9,7 @@ requirements:
 - redis 
   - npm install redis
   - yum install redis
-  - # service redis start
+  - start redis: service redis start
 - express
   - npm install express
 - http
