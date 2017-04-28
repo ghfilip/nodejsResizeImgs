@@ -9,10 +9,11 @@ requirements:
 - redis 
   - npm install redis
   - yum install redis
+  - # service redis start
 - express
   - npm install express
 - http
-  - nppm install http
+  - npm install http
 - fs
   - npm install fs
 - image-size
