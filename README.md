@@ -15,4 +15,5 @@ requirements:
 
 
 usage:
-http://your_server_ip:5555/images/1.jpg?size=300x400
+
+- http://your_server_ip:5555/images/1.jpg?size=300x400
