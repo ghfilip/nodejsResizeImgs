@@ -14,11 +14,10 @@ global.fs = require("fs");
 global.sizeOf = require('image-size');
 global.sharp = require('sharp');
 
-//variabila cu imaginile disponibile
 global.imagesFolder = '/images/';
 global.imagesResizedFolder = '/images_resized/';
 
-//add the auctions
+//add the logic
 var imgs = require("./lib/functions.js");
 
 app.use(express.static(__dirname + '/images'));
@@ -28,14 +27,12 @@ app.get('/images/:imgName', function (req, res) {
     console.log(req.params, req.query); //
         
     imgs.resizeImage(req.params.imgName, req.query.size, function(err, file, sizeDim){
-        if(err) console.log('eroare la resize');
+        if(err) console.log('resize error');
 
-        //servim imaginea cu resize facut
-        
-        //din fisier
+        //from file
         res.sendFile(__dirname + file);
         
-        //din buffer
+        //from buffer
         //res.writeHead(200, {'Content-Type': 'image/jpeg' });
         // res.end(file);
     });
