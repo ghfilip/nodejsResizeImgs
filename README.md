@@ -6,14 +6,25 @@ This is a simple Microservice for resizing images with node.js using "sharp"
 install
 
 requirements:
-- redis
+- redis 
+  - npm install redis
+  - yum install redis
 - express
+  - npm install express
 - http
+  - nppm install http
 - fs
+  - npm install fs
 - image-size
+  - npm install image-size
 - sharp
+  - npm install sharp
 
 
 usage:
 
-- http://your_server_ip:5555/images/1.jpg?size=300x400
+- with new sizes:
+  - http://your_server_ip:5555/images/1.jpg?size=300x400
+  
+- without sizes:
+  - http://your_server_ip:5555/images/1.jpg
