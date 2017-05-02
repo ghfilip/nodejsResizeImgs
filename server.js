@@ -22,8 +22,19 @@ var imgs = require("./lib/functions.js");
 
 app.use(express.static(__dirname + '/images'));
 
+//stats
+app.get('/stats/', function(req, res){
+    console.log('stats accessed::');
+    imgs.getStatsFromRedis('fromCache', function(counts){
+        imgs.getStatsFromRedis('resized', function(counts2){
+            res.send('Images stats:<br /><br />Total images: '+ imgs.countFiles(__dirname + imagesFolder) +'<br />Resized images: '
+                + imgs.countFiles(__dirname + imagesResizedFolder) +'<br />Served from cache: '+ counts +'<br />Images resized: '+ counts2);
+        });
+    });
+});
+
+//images
 app.get('/images/:imgName', function (req, res) {
-    console.log("intra aici");
     console.log(req.params, req.query); //
         
     imgs.resizeImage(req.params.imgName, req.query.size, function(err, file, sizeDim){
