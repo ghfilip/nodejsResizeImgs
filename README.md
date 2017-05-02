@@ -32,7 +32,7 @@ usage:
 - return image without sizes (originam image):
   - http://your_server_ip:5555/images/1.jpg
   
- - stats page:
+- stats page:
   - http://your_server_ip:5555/stats
   
 
