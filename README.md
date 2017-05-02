@@ -29,7 +29,7 @@ usage:
 - return image with new sizes (resized):
   - http://your_server_ip:5555/images/1.jpg?size=300x400
   
-- return image without sizes (originam image):
+- return image without sizes (original image):
   - http://your_server_ip:5555/images/1.jpg
   
 - stats page:
