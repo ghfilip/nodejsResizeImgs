@@ -20,12 +20,19 @@ requirements:
   - npm install image-size
 - sharp
   - npm install sharp
+- shelljs
+  - npm install shelljs
 
 
 usage:
 
-- with new sizes:
+- return image with new sizes (resized):
   - http://your_server_ip:5555/images/1.jpg?size=300x400
   
-- without sizes:
+- return image without sizes (originam image):
   - http://your_server_ip:5555/images/1.jpg
+  
+ - stats page:
+  - http://your_server_ip:5555/stats
+  
+
