@@ -8,34 +8,52 @@ install
 requirements:
 - redis 
 <pre>
-  - npm install redis
-  - yum install redis
-  - start redis: service redis start
- </pre>
+  npm install redis
+  yum install redis
+  start redis: service redis start
+</pre>
 - express
-  - npm install express
+<pre>
+  npm install express
+</pre>
 - http
-  - npm install http
+<pre>
+  npm install http
+</pre>
 - fs
-  - npm install fs
+<pre>
+  npm install fs
+</pre>
 - image-size
-  - npm install image-size
+<pre>
+  npm install image-size
+</pre>
 - sharp
-  - npm install sharp
+<pre>
+  npm install sharp
+</pre>
 - shelljs
-  - npm install shelljs
+<pre>
+  npm install shelljs
+</pre>
 
 
 usage:
 
 - return image with new sizes (resized):
-  - http://your_server_ip:5555/images/1.jpg?size=300x400
+<pre>
+  http://your_server_ip:5555/images/1.jpg?size=300x400
+</pre>
   
 - return image without sizes (original image):
-  - http://your_server_ip:5555/images/1.jpg
+<pre>
+  http://your_server_ip:5555/images/1.jpg
+</pre>
   
 - stats page:
-  - http://your_server_ip:5555/stats
+<pre>
+  http://your_server_ip:5555/stats
+</pre>
   
 
 
@@ -43,12 +61,20 @@ unit testing:
 
 requirements:
 - sinon
-  - npm install sinon
+<pre>
+  npm install sinon
+</pre>
 - chai
-  - npm install chai
+<pre>
+  npm install chai
+</pre>
 - sinon-chai
-  - npm install sinon-chai
+<pre>
+  npm install sinon-chai
+</pre>
   
 running tests:
-  - mocha ./lib/unit.js
+<pre>
+  mocha ./lib/unit.js
+</pre>
    
