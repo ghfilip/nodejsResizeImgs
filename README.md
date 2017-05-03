@@ -2,6 +2,8 @@
 node.js resize images
 
 This is a simple Microservice for resizing images with node.js using "sharp"
+This module supports resizing JPEG, PNG, WebP, TIFF, GIF and SVG images (sharp documentation)
+
 
 install
 
