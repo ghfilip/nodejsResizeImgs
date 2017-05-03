@@ -72,6 +72,10 @@ requirements:
 <pre>
   npm install sinon-chai
 </pre>
+- mocha
+<pre>
+  npm install mocha
+</pre>
   
 running tests:
 <pre>
