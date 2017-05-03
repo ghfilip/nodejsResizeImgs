@@ -36,3 +36,17 @@ usage:
   - http://your_server_ip:5555/stats
   
 
+
+unit testing:
+
+requirements:
+- sinon
+  - npm install sinon
+- chai
+  - npm install chai
+- sinon-chai
+  - npm install sinon-chai
+  
+running tests:
+  - mocha ./lib/unit.js
+  
